@@ -305,7 +305,7 @@ export default class CFFGlyph extends Glyph {
               break;
 
             case 29: // callgsubr
-              index = stack.pop() + gsubrsBias;
+              let index = stack.pop() + gsubrsBias;
               subr = gsubrs[index];
               if (subr) {
                 usedGsubrs[index] = true;
